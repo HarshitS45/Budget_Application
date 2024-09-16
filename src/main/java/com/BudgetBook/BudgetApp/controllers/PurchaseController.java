@@ -1,13 +1,17 @@
 package com.BudgetBook.BudgetApp.controllers;
 
-import com.BudgetBook.BudgetApp.dto.PurchaseDTO;
-import com.BudgetBook.BudgetApp.entities.PurchaseEntity;
+import com.BudgetBook.BudgetApp.exceptions.UserNotFoundException;
+import com.BudgetBook.BudgetApp.models.request.PurchaseFilterOptions;
+import com.BudgetBook.BudgetApp.models.request.PurchaseRequestDTO;
+import com.BudgetBook.BudgetApp.models.request.PurchaseUpdateDTO;
+import com.BudgetBook.BudgetApp.models.response.PurchaseFilterResponse;
+import com.BudgetBook.BudgetApp.models.response.UserBudgetDTO;
 import com.BudgetBook.BudgetApp.services.PurchaseService;
-import com.BudgetBook.BudgetApp.summary.PurchaseSummary;
-import jakarta.websocket.server.PathParam;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotNull;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.util.List;
 
 @RequestMapping(path = "/purchases")
@@ -20,54 +24,66 @@ public class PurchaseController {
     this.purchaseService = purchaseService;
   }
 
+  @PostMapping
+  public PurchaseRequestDTO newPurchase(@RequestBody @NotNull @Valid PurchaseRequestDTO purchaseRequestDTO){
+    return purchaseService.newPurchase(purchaseRequestDTO);
+  }
+
   @GetMapping(path = "/{id}")
-  public PurchaseDTO getPurchaseById(@PathVariable("id") Long id){
+  public PurchaseRequestDTO getPurchaseById(@PathVariable("id") Long id) throws UserNotFoundException {
     return purchaseService.getPurchaseById(id);
   }
 
   @GetMapping
-  public List<PurchaseDTO> getAllPurchases(){
+  public List<PurchaseRequestDTO> getAllPurchases(){
     return purchaseService.getAllPurchases();
   }
 
-  @PostMapping
-  public PurchaseDTO newPurchase(@RequestBody PurchaseDTO purchaseDTO){
-    return purchaseService.newPurchase(purchaseDTO);
-  }
-
-  @DeleteMapping(path = "/{id}")
+  @PatchMapping(path = "/{id}/delete")
   public String deletePurchaseById(@PathVariable("id") Long id){
     return purchaseService.deletePurchaseById(id);
   }
 
-  @PatchMapping("/{id}/cost")
-  public String updateAmount(@PathVariable Long id, @RequestBody int cost) {
-      return purchaseService.updateAmount(id,cost);
+  @GetMapping(path = "/trash")
+  public List<PurchaseRequestDTO> getAllDeletedPurchases(){
+    return purchaseService.getAllDeletedPurchases();
   }
 
-//  @GetMapping("/summary")
-//  public PurchaseSummary getPurchaseSummary(){
-//    return purchaseService.getPurchaseSummary();
-//  }
-//
-//  @GetMapping("/week")
-//  public int getSpentThisWeek(){
-//    return purchaseService.getSpentThisWeek();
-//  }
-//
-//  @GetMapping("/month")
-//  public int getSpentThisMonth(){
-//    return purchaseService.getSpentThisMonth();
-//  }
-//
-//  @GetMapping("/yesterday")
-//  public int getSpentYesterday(){
-//    return purchaseService.getSpentYesterday();
-//  }
-//
-//  @GetMapping("/timePeriod")
-//  public int getSpentYesterday(@RequestParam("startDate") LocalDateTime startDate , @RequestParam("endDate") LocalDateTime endDate){
-//    return purchaseService.getSpentOfTimePeriod(startDate, endDate);
-//  }
+  @PatchMapping(path = "/{id}/reinstate")
+  public String purchaseReinstate(@PathVariable("id") Long id) throws UserNotFoundException {
+    return purchaseService.purchaseReinstate(id);
+  }
+
+  @DeleteMapping(path = "/emptyTrash")
+  public String emptyTrash(){
+    return purchaseService.emptyTrash();
+  }
+
+  @PatchMapping("/{id}/updatePurchase")
+  public String updatePurchase(@PathVariable Long id, @RequestBody PurchaseUpdateDTO requestDTO) throws UserNotFoundException {
+    return purchaseService.updatePurchase(id,requestDTO);
+  }
+
+  @GetMapping("/{days}/summaryByDays")
+  public List<PurchaseRequestDTO> getPurchaseSummaryByDays(@PathVariable Integer days){
+    return purchaseService.getPurchaseSummaryByDays(days);
+  }
+
+  @GetMapping("/summaryByCategory")
+  public List<PurchaseFilterResponse> getPurchaseSummaryByCategory(@RequestBody PurchaseFilterOptions requestDTO){
+    return purchaseService.getPurchaseSummaryByCategory(requestDTO);
+  }
+
+  @GetMapping("/purchaseOfTimePeriod")
+  public List<PurchaseRequestDTO> getPurchaseOfTimePeriod(@RequestParam("startDate") LocalDate startDate , @RequestParam("endDate") LocalDate endDate){
+    return purchaseService.getPurchaseOfTimePeriod(startDate, endDate);
+  }
+
+  @GetMapping("/user-budget/{id}")
+  public List<UserBudgetDTO> findUserBudgetSummary(@PathVariable Long id){
+    return purchaseService.findUserBudgetSummary(id);
+  }
 
 }
+
+
