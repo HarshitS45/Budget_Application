@@ -1,0 +1,105 @@
+[2025-04-09 23:43:16] Executing bootstrap tasks
+[2025-04-09 23:43:16] OpenJDK Runtime Environment 21.0.6+7-LTS
+[2025-04-09 23:43:16] Product org.eclipse.products.epp.package.java.2025-03
+[2025-04-09 23:43:16] Bundle org.eclipse.oomph.setup 1.31.0.v20250302-1233, build=1131, branch=7dd34dae7911d7640017e5a8d324d7359e5c5a8e
+[2025-04-09 23:43:16] Bundle org.eclipse.oomph.setup.core 1.33.0.v20250304-0858, build=1131, branch=7dd34dae7911d7640017e5a8d324d7359e5c5a8e
+[2025-04-09 23:43:16] Bundle org.eclipse.oomph.setup.p2 1.22.0.v20250302-1233, build=1131, branch=7dd34dae7911d7640017e5a8d324d7359e5c5a8e
+[2025-04-09 23:43:16] Performing P2 Director (Eclipse IDE for Java Developers (2025-03) + JRE 21.0.6)
+[2025-04-09 23:43:16] Offline = false
+[2025-04-09 23:43:16] Mirrors = true
+[2025-04-09 23:43:16] Resolving 29 requirements from 4 repositories to /Users/harshit/eclipse/java-2025-032/Eclipse.app/Contents/Eclipse
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.justj.openjdk.hotspot.jre.full.feature.group (filter=(|(&(osgi.arch=aarch64)(osgi.os=linux))(&(osgi.arch=aarch64)(osgi.os=macosx))(&(osgi.arch=aarch64)(osgi.os=win32))(&(osgi.arch=ppc64le)(osgi.os=linux))(&(osgi.arch=riscv64)(osgi.os=linux))(&(osgi.arch=x86_64)(osgi.os=linux))(&(osgi.arch=x86_64)(osgi.os=macosx))(&(osgi.arch=x86_64)(osgi.os=win32))))
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:epp.package.java [4.35.0,5.0.0) (filter=(|(&(osgi.arch=aarch64)(osgi.os=linux)(osgi.ws=gtk))(&(osgi.arch=aarch64)(osgi.os=macosx)(osgi.ws=cocoa))(&(osgi.arch=aarch64)(osgi.os=win32)(osgi.ws=win32))(&(osgi.arch=riscv64)(osgi.os=linux)(osgi.ws=gtk))(&(osgi.arch=x86_64)(osgi.os=linux)(osgi.ws=gtk))(&(osgi.arch=x86_64)(osgi.os=macosx)(osgi.ws=cocoa))(&(osgi.arch=x86_64)(osgi.os=win32)(osgi.ws=win32))))
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.platform.feature.group [4.35.0,5.0.0)
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.rcp.feature.group [4.35.0,5.0.0)
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.buildship.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.eclemma.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.egit.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.epp.mpc.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jdt.bcoview.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jdt.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.jgit.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.lemminx.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.m2e.logback.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.commons.activity.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.egit.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.git.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.github.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.ide.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.jdt.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.jenkins.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.reviews.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.mylyn.wikitext.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tips.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tm.terminal.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tm4e.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.tm4e.language_pack.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.wildwebdeveloper.xml.feature.feature.group
+[2025-04-09 23:43:16] Requirement org.eclipse.equinox.p2.iu:org.eclipse.oomph.setup.feature.group
+[2025-04-09 23:43:16] Repository https://download.eclipse.org/justj/jres/21/updates/release/latest
+[2025-04-09 23:43:16] Repository https://download.eclipse.org/technology/epp/packages/2025-03/202503061200
+[2025-04-09 23:43:16] Repository https://download.eclipse.org/releases/2025-03/202503121000
+[2025-04-09 23:43:16] Repository https://download.eclipse.org/oomph/updates/milestone/latest
+[2025-04-09 23:43:19] Calculating requirements and dependencies.
+[2025-04-09 23:43:20] Computing prerequisite plan
+[2025-04-09 23:43:28] Collecting 6 artifacts from https://download.eclipse.org/releases/2025-03/202503121000
+[2025-04-09 23:43:29] Fetching 202503121000&countryCode=in&timeZone=5&format=xml from https://www.eclipse.org/downloads/download.php?format=xml&file=/releases/2025-03/
+[2025-04-09 23:43:30] Fetching org.eclipse.equinox.security_1.4.500.v20250129-1350.jar from https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2025-03/202503121000/plugins/ (117.77kB)
+[2025-04-09 23:43:30] Fetching org.eclipse.m2e.launching_2.1.0.20241011-1559.jar from https://mirror.library.ucy.ac.cy/eclipse/releases/2025-03/202503121000/plugins/ (111.4kB)
+[2025-04-09 23:43:30] Fetching org.eclipse.ant.core_3.7.600.v20241215-2025.jar from https://mirror.kakao.com/eclipse/releases/2025-03/202503121000/plugins/ (109.84kB)
+[2025-04-09 23:43:31] Fetching org.eclipse.equinox.p2.ui.sdk.scheduler_1.6.400.v20250129-1122.jar from https://mirrors.nju.edu.cn/eclipse//releases/2025-03/202503121000/plugins/ (111.45kB)
+[2025-04-09 23:43:31] Fetching org.eclipse.equinox.security_1.4.500.v20250129-1350.jar from https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2025-03/202503121000/plugins/
+[2025-04-09 23:43:33] Mirrored 1 artifacts from https://mirror.library.ucy.ac.cy/eclipse/releases/2025-03/202503121000/ at 67kb/s
+[2025-04-09 23:43:33] Mirrored 1 artifacts from https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/releases/2025-03/202503121000/ at 58kb/s
+[2025-04-09 23:43:33] Mirrored 1 artifacts from https://mirror.kakao.com/eclipse/releases/2025-03/202503121000/ at 49kb/s
+[2025-04-09 23:43:33] Mirrored 1 artifacts from https://mirrors.nju.edu.cn/eclipse//releases/2025-03/202503121000/ at 44kb/s
+[2025-04-09 23:43:33] Collected 6 artifacts for https://download.eclipse.org/releases/2025-03/202503121000 in 4.762s
+[2025-04-09 23:43:33] Collecting 8 artifacts from https://download.eclipse.org/oomph/updates/milestone/latest
+[2025-04-09 23:43:35] Fetching S20250409-090627-1.37.0-M1&countryCode=in&timeZone=5&format=xml from https://www.eclipse.org/downloads/download.php?file=/oomph/drops/milestone/ (63B)
+[2025-04-09 23:43:36] Fetching org.eclipse.oomph.util_1.25.0.v20250312-1007.jar from https://download.eclipse.org/oomph/drops/milestone/S20250409-090627-1.37.0-M1/plugins/ (240.87kB)
+[2025-04-09 23:43:36] Fetching org.eclipse.oomph.setup_1.36.0.v20250407-1158.jar from https://download.eclipse.org/oomph/drops/milestone/S20250409-090627-1.37.0-M1/features/ (22.35kB)
+[2025-04-09 23:43:36] Fetching org.eclipse.oomph.setup.sync_1.19.0.v20250407-1158.jar from https://download.eclipse.org/oomph/drops/milestone/S20250409-090627-1.37.0-M1/plugins/ (107.35kB)
+[2025-04-09 23:43:36] Fetching org.eclipse.oomph.setup.ui_1.34.0.v20250407-1158.jar from https://download.eclipse.org/oomph/drops/milestone/S20250409-090627-1.37.0-M1/plugins/ (815.73kB)
+[2025-04-09 23:43:37] Fetching org.eclipse.oomph.setup.core_1.34.0.v20250407-1158.jar from https://download.eclipse.org/oomph/drops/milestone/S20250409-090627-1.37.0-M1/features/ (22.43kB)
+[2025-04-09 23:43:37] Fetching org.eclipse.oomph.setup_1.32.0.v20250407-1158.jar from https://download.eclipse.org/oomph/drops/milestone/S20250409-090627-1.37.0-M1/plugins/ (368.02kB)
+[2025-04-09 23:43:37] Fetching org.eclipse.oomph.setup.editor_1.31.0.v20250407-1158.jar from https://download.eclipse.org/oomph/drops/milestone/S20250409-090627-1.37.0-M1/plugins/ (540.54kB)
+[2025-04-09 23:43:37] Fetching org.eclipse.oomph.setup.ui_1.34.0.v20250407-1158.jar from https://download.eclipse.org/oomph/drops/milestone/S20250409-090627-1.37.0-M1/plugins/
+[2025-04-09 23:43:38] Fetching org.eclipse.oomph.setup.editor_1.31.0.v20250407-1158.jar from https://download.eclipse.org/oomph/drops/milestone/S20250409-090627-1.37.0-M1/plugins/
+[2025-04-09 23:43:38] Fetching org.eclipse.oomph.setup_1.32.0.v20250407-1158.jar from https://download.eclipse.org/oomph/drops/milestone/S20250409-090627-1.37.0-M1/plugins/
+[2025-04-09 23:43:38] Fetching slf4j.api_2.0.17.jar from https://download.eclipse.org/oomph/drops/milestone/S20250409-090627-1.37.0-M1/plugins/ (68.27kB)
+[2025-04-09 23:43:44] Mirrored 8 artifacts from https://download.eclipse.org/oomph/drops/milestone/S20250409-090627-1.37.0-M1/ at 83kb/s
+[2025-04-09 23:43:44] Collected 8 artifacts for https://download.eclipse.org/oomph/updates/milestone/latest in 11.17s
+[2025-04-09 23:43:44] Collecting 5 artifacts from https://download.eclipse.org/technology/epp/packages/2025-03/202503061200
+[2025-04-09 23:43:45] Fetching org.eclipse.epp.package.java.feature_4.35.0.20250306-0811.jar from https://download.eclipse.org/technology/epp/packages/2025-03/202503061200/features/ (22.68kB)
+[2025-04-09 23:43:45] Fetching org.eclipse.epp.package.common_4.35.0.20250306-0811.jar from https://download.eclipse.org/technology/epp/packages/2025-03/202503061200/plugins/ (259.03kB)
+[2025-04-09 23:43:45] Fetching org.eclipse.epp.package.common.feature_4.35.0.20250306-0811.jar from https://download.eclipse.org/technology/epp/packages/2025-03/202503061200/features/ (23.09kB)
+[2025-04-09 23:43:46] Fetching epp.package.java.executable.cocoa.macosx.aarch64_4.35.0.20250306-0811 from https://download.eclipse.org/technology/epp/packages/2025-03/202503061200/binary/ (209.23kB)
+[2025-04-09 23:43:46] Fetching org.eclipse.epp.package.java_4.35.0.20250306-0811.jar from https://download.eclipse.org/technology/epp/packages/2025-03/202503061200/plugins/ (275.54kB)
+[2025-04-09 23:43:47] Fetching org.eclipse.epp.package.java_4.35.0.20250306-0811.jar from https://download.eclipse.org/technology/epp/packages/2025-03/202503061200/plugins/
+[2025-04-09 23:43:48] Mirrored 5 artifacts from https://download.eclipse.org/technology/epp/packages/2025-03/202503061200/ at 69kb/s
+[2025-04-09 23:43:48] Collected 5 artifacts for https://download.eclipse.org/technology/epp/packages/2025-03/202503061200 in 4.119s
+[2025-04-09 23:43:48] Collecting 3 artifacts from https://download.eclipse.org/justj/jres/21/updates/release/latest
+[2025-04-09 23:43:49] Fetching 21.0.6&countryCode=in&timeZone=5&format=xml from https://www.eclipse.org/downloads/download.php?file=/justj/jres/21/updates/release/
+[2025-04-09 23:43:50] Fetching org.eclipse.justj.openjdk.hotspot.jre.full_21.0.6.v20250130-0529.jar from https://ftp.yz.yamagata-u.ac.jp/pub/eclipse/justj/jres/21/updates/release/21.0.6/features/ (24.74kB)
+[2025-04-09 23:43:50] Fetching org.eclipse.justj.openjdk.hotspot.jre.full_21.0.6.v20250130-0529.jar from https://mirror.kakao.com/eclipse/justj/jres/21/updates/release/21.0.6/plugins/ (21.37kB)
+[2025-04-09 23:43:51] Fetching org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_21.0.6.v20250130-0529.jar from https://mirrors.nju.edu.cn/eclipse//justj/jres/21/updates/release/21.0.6/plugins/ (127.43MB)
+[2025-04-09 23:43:52] Fetching org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_21.0.6.v20250130-0529.jar from https://mirrors.nju.edu.cn/eclipse//justj/jres/21/updates/release/21.0.6/plugins/
+[2025-04-09 23:46:37] Fetching org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_21.0.6.v20250130-0529.jar from https://mirrors.nju.edu.cn/eclipse//justj/jres/21/updates/release/21.0.6/plugins/ (127.43MB)
+[2025-04-09 23:50:24] An error was detected while performing the engine operation and the changes are being rolled back. See the log for details.
+[2025-04-09 23:50:24] java.lang.IllegalStateException: Attempt to access stopped agent: org.eclipse.equinox.internal.p2.core.ProvisioningAgent@452f3077
+  at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.checkRunning(ProvisioningAgent.java:89)
+  at org.eclipse.equinox.internal.p2.core.ProvisioningAgent.getService(ProvisioningAgent.java:51)
+  at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+  at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:266)
+  at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:192)
+  at org.eclipse.oomph.p2.internal.core.AgentImpl.getCurrentProfile(AgentImpl.java:411)
+  at org.eclipse.oomph.setup.p2.impl.P2TaskImpl.perform(P2TaskImpl.java:953)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.doPerformNeededSetupTasks(SetupTaskPerformer.java:3876)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.performNeededSetupTasks(SetupTaskPerformer.java:3804)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.performTriggeredSetupTasks(SetupTaskPerformer.java:3785)
+  at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.perform(SetupTaskPerformer.java:3663)
+  at org.eclipse.oomph.setup.internal.installer.SimpleVariablePage.installPerform(SimpleVariablePage.java:1360)
+  at org.eclipse.oomph.setup.internal.installer.SimpleVariablePage$20.run(SimpleVariablePage.java:1167)
+
+[2025-04-09 23:50:24] 
